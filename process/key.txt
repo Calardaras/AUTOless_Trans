@@ -1,0 +1,899 @@
+find_current_subject_countries_2:0
+find_current_subject_countries_2_act:0
+find_current_subject_countries_2_select_title:0
+CHARACTER_VIEW_SORT_BY_STATESMANSHIP_TOOLTIP:0
+GO_TO_COUNTRY:0
+GO_TO_PROVINCE:0
+TARGET_CULTURE_TT:0
+TARGET_RELIGION_TT:0
+GOOD_PRODUCED_TARGET_TT:0
+PROVINCE_RANK_TARGET_TT:0
+SORT_BUILDING_TOOLTIP:0
+SHOW_CIVILIZATION_TOOLTIP:0
+SHOW_TERRITORY_INCOME:0
+sort_sucession_zzzz:0
+SHOW_RELIGIONS_TT:0
+IS_REPUBLIC_GUI_TT:0
+IS_MONARCHY_GUI_TT:0
+IS_TRIBAL_GUI_TT:0
+SHOW_CULTURE_GROUPS_TT:0
+SHOW_GOVERNMENT_TT:0
+SHOW_STANCE_TT:0
+SHOW_SUBJECT_LOYALTY_TT:0
+NO_LOYALTY:0
+OPINION_GUI_TT:0
+SHOW_SUBJECT_OPINTION_TT:0
+SUBJECT_DEMAND_TRIBUTE_TT:0
+CHANGE_ALL_SUBJECT_FOCUSES_TT:0
+CHANGE_SUBJECT_FOCUS_COMMERCE_TT:0
+CHANGE_SUBJECT_FOCUS_MIL_TT:0
+CHANGE_SUBJECT_FOCUS_DEV_TT:0
+CHANGE_SUBJECT_FOCUS_CULTURE_TT:0
+INCREASE_SUBJECT_INTEGRATION_TT:0
+INCREASE_SUBJECT_AUTONOMY_TT:0
+CHANGE_INDIVIDUAL_SUBJECTS_FOCUS_TT:0
+SUBJECT_BESTOW_GIFTS_TT:0
+SUBJECT_FORCE_RELIGION_TT:0
+SUBJECT_FORCE_CULTURE_TT:0
+CONTRIBUTE_TO_CAPITAL_TT:0
+TAKE_SUBJECTS_MANPOWER_TT:0
+CHANGE_TRIBAL_VASSAL_TO_CIVILIZED_TT:0
+BRING_VASSAL_INTO_WAR_TT:0
+FORCE_DYNASTY_ON_TO_THRONE_TT:0
+CHANGE_VASSAL_TYPE_TT:0
+build_buildings:0
+build_in_territory:0
+select_territory_to_build_in:0
+subject_focus:0
+recently_changed_focus_TT:0
+commerce_focused_subject:0
+military_focused_subject:0
+development_focused_subject:0
+increased_subject_tribute:0
+increased_subject_integrations:0
+culture_focused_subject:0
+loyalty_to_overlord_1:0
+loyalty_to_overlord_2:0
+forced_to_change_religion:0
+forced_to_change_culture:0
+took_pops_from_territory:0
+civilizing_tribe_mod:0
+diverting_subjects_trade:0
+trade_diverted_by_overlord:0
+close_relation_with_overlord:0
+increased_subject_autonomy:0
+took_manpower_from_country:0
+took_pops_from_territory_opmod:0
+forced_army_levy_opmod:0
+forced_into_war_opmod:0
+overlord_diverting_trade_opmod:0
+refused_to_become_feudatory_opmod:0
+dynasty_member_on_throne:0
+subject_focus_1_t:0
+subject_focus_1_desc:0
+subject_focus_1.a:0
+subject_focus_1.b:0
+subject_focus_2_t:0
+subject_focus_2_desc:0
+subject_focus_2.a:0
+subject_focus_2.b:0
+subject_focus_3_t:0
+subject_focus_3_desc:0
+subject_focus_3.a:0
+subject_focus_3.b:0
+subject_focus_4_t:0
+subject_focus_4_desc:0
+subject_focus_4.a:0
+subject_focus_4.b:0
+subject_focus_5_t:0
+subject_focus_5_desc:0
+subject_focus_5.a:0
+subject_focus_5.b:0
+subject_focus_6_t:0
+subject_focus_6_desc:0
+subject_focus_6.a:0
+subject_focus_6.b:0
+subject_focus_6.c:0
+subject_focus_6_tt:0
+subject_focus_6_tttt:0
+subject_focus_6_ttt:0
+subject_focus_8_t:0
+subject_focus_8_desc:0
+subject_focus_8.a:0
+subject_focus_8.b:0
+subject_focus_individual.1.t:0
+subject_focus_individual.1.desc:0
+subject_focus_individual.1.a:0
+subject_focus_individual.1.b:0
+subject_focus_individual.1.c:0
+subject_focus_individual.2.t:0
+subject_focus_individual.2.desc:0
+subject_focus_individual.2.a:0
+subject_focus_individual.2.b:0
+subject_focus_individual.2.c:0
+subject_focus_individual.2.d:0
+subject_focus_individual.3.t:0
+subject_focus_individual.3.desc:0
+subject_focus_individual.3.a:0
+subject_focus_individual.4.t:0
+subject_focus_individual.4.desc:0
+subject_focus_individual.4.a:0
+subject_focus_individual.5.t:0
+subject_focus_individual.5.desc:0
+subject_focus_individual.5.a:0
+subject_focus_individual.6.t:0
+subject_focus_individual.6.desc:0
+subject_focus_individual.6.a:0
+subject_focus_individual_3_tt:0
+subject_focus_individual.9.tt:0
+subject_focus_individual_10_A_tt:0
+subject_focus_individual_10_B_tt:0
+COUNTRY_CONCEPT_TOOLTIP:0
+show_current_subject_focus_loc_1:0
+show_current_subject_focus_loc_2:0
+show_current_subject_focus_loc_3:0
+show_current_subject_focus_loc_4:0
+show_current_subject_focus_loc_5:0
+show_current_subject_focus_loc_6:0
+show_subject_type_loc_1:0
+show_subject_type_loc_2:0
+show_subject_type_loc_3:0
+show_subject_type_loc_4:0
+show_subject_type_loc_5:0
+show_subject_type_loc_6:0
+show_subject_type_loc_7:0
+show_subject_type_loc_8:0
+show_subject_type_loc_9:0
+find_province_in_subject_nation_tt:0
+SHOW_CHARACTER_FOCUS:0
+CHARACTER_FOCUS:0
+SHOW_MARTIAL_FOCUS:0
+MARTIAL_FOCUS:0
+MARTIAL_ETHOS_TT:0
+CIVIC_ETHOS_TT:0
+RELIGIOUS_ETHOS_TT:0
+ORATORY_ETHOS_TT:0
+MANAGE_HOLDINGS:0
+AQUIRE_WEALTH_TT:0
+ENCOURAGE_TRADE_TT:0
+ENCOURAGE_CONSTRUCTION_TT:0
+INCREASE_AUTONOMY_TTT:0
+SIEGECRAFT_FOCUS_TT:0
+STRATEGY_FOCUS_TT:0
+NAVAL_FOCUS_TT:0
+COMMAND_FOCUS_TT:0
+CHARACTER_FOCUS_XP_TT:0
+prowess_focus_triggered_mod:0
+strategy_focus_triggered_mod:0
+siegecraft_focus_triggered_mod:0
+command_focus_triggered_mod:0
+populist_focus_triggered_mod:0
+oration_focus_triggered_mod:0
+foreign_affairs_focus_triggered_mod:0
+family_focus_triggered_mod:0
+construction_focus_triggered_mod:0
+holding_focus_triggered_mod:0
+commerce_focus_triggered_mod:0
+wealth_focus_triggered_mod:0
+divinity_focus_triggered_mod:0
+philosophy_focus_triggered_mod:0
+priestly_support_focus_triggered_mod:0
+piety_focus_triggered_mod:0
+loyal_generals_country_mod:0
+inspired_commanders_country_mod:0
+military_values_country_mod:0
+strict_organization_state_mod:0
+siege_training_country_mod:0
+naval_construction_country_mod:0
+grain_production_province_mod:0
+grain_distribution_state_mod:0
+taxation_policies_state_mod:0
+increased_tariffs_country_mod:0
+organized_holdings_char_mod:0
+land_appropration_country_mod:0
+construction_leader_country_mod:0
+true_ruler_country_modifier:0
+wise_advisors_country_mod:0
+head_of_administration_char_mod:0
+ambassadors_country_mod:0
+prosperity_for_all_country_mod:0
+conversion_policies_state_mod:0
+mandatory_practice_country_mod:0
+divine_mandate_country_mod:0
+patronize_temples_province_mod:0
+religous_calendar_country_mod:0
+bribery_country_mod:0
+bribe_pi_cost_modifier:0
+philosopher_king_trait:0
+philosopher_king_trait_desc:0
+master_of_diplomacy_trait:0
+master_of_diplomacy_trait_desc:0
+veteran_warrior_trait:0
+veteran_warrior_trait_desc:0
+master_of_trade_trait:0
+master_of_trade_trait_desc:0
+add_martial_trait_tooltip:0
+add_zeal_trait_tooltip:0
+add_civic_trait_tooltip:0
+add_oratory_trait_tooltip:0
+add_og_thinker_trait_tooltip:0
+add_random_ass_naval_trait_tt:0
+all_children_get_3_skill_points_tt:0
+already_focused_on_this_tt:0
+current_character_focus_loc_1:0
+current_character_focus_loc_2:0
+current_character_focus_loc_3:0
+current_character_focus_loc_4:0
+current_character_focus_loc_5:0
+current_character_focus_loc_6:0
+current_character_focus_loc_7:0
+current_character_focus_loc_8:0
+current_character_focus_loc_9:0
+current_character_focus_loc_10:0
+current_character_focus_loc_11:0
+current_character_focus_loc_12:0
+current_character_focus_loc_13:0
+current_character_focus_loc_14:0
+current_character_focus_loc_15:0
+current_character_focus_loc_16:0
+while_character_is_ruler_tooltip:0
+already_focused_on_prowess_tt:0
+has_taken_this_already_tooltip:0
+does_not_have_enough_experience_tt:0
+recently_selected_char_focus_tt:0
+must_be_an_adult_to_choose_tt:0
+can_only_change_rulers_focus_tt:0
+dont_cheat_you_monkey_tooltip:0
+does_not_have_a_martial_focus_tt:0
+does_not_have_a_oratory_focus_tt:0
+does_not_have_a_civic_focus_tt:0
+does_not_have_a_zeal_focus_tt:0
+does_not_have_loyalty_and_respect_tt:0
+does_not_have_loyal_generals_tt:0
+does_not_have_naval_expansion_tt:0
+does_not_have_inspiring_commander_tt:0
+does_not_have_siege_training_tt:0
+does_not_have_naval_construction_tt:0
+does_not_have_strict_organization_tt:0
+does_not_have_military_values_tt:0
+does_not_have_assert_authority_tt:0
+does_not_have_ambassadors_tt:0
+does_not_head_of_admin_tt:0
+does_not_have_hospitality_tt:0
+does_not_wise_advisors_tt:0
+does_not_have_sound_foundations_tt:0
+does_not_have_bribery_tt:0
+does_not_have_true_ruler_tt:0
+does_not_have_land_appropriation_tt:0
+does_not_have_construction_leader_tt:0
+does_not_have_holding_organization_tt:0
+does_not_have_local_forums_tt:0
+does_not_have_increased_tariffs_tt:0
+does_not_have_taxation_policies_tt:0
+does_not_have_grain_distribution_tt:0
+does_not_have_local_administrators_tt:0
+does_not_have_observe_rituals_tt:0
+does_not_have_patronize_temples_tt:0
+does_not_have_divine_mandate_tt:0
+does_not_have_mandatory_practice_tt:0
+does_not_have_religous_calendar_tt:0
+does_not_have_conversion_policies_tt:0
+does_not_have_legendary_ancestors_tt:0
+does_not_have_divine_offerings_tt:0
+does_not_have_prosperity_for_all_tt:0
+PROWESS_FOCUS_TOOLTIP:0
+STRATEGY_FOCUS_TOOLTIP:0
+SIEGECRAFT_FOCUS_TOOLTIP:0
+COMMAND_FOCUS_TOOLTIP:0
+LOYALTY_AND_RESPECT_TOOLTIP:0
+LOYAL_GENERALS_TOOLTIP:0
+INSPIRING_COMMANDER_TOOLTIP:0
+NAVAL_EXPANSION_TOOLTIP:0
+NAVAL_CONSTRUCTION_TOOLTIP:0
+SIEGE_TRAINING_TOOLTIP:0
+MILITARY_VALUES_TOOLTIP:0
+STRICT_ORGANIZATION_TOOLTIP:0
+VETERAN_WARRIOR_TOOLTIP:0
+POPULIST_FOCUS_TOOLTIP:0
+ORATION_FOCUS_TOOLTIP:0
+FOREIGN_AFFAIRS_FOCUS_TOOLTIP:0
+FAMILY_FOCUS_TOOLTIP:0
+ASSERT_AUTHORITY_TOOLTIP:0
+HOSPITALITY_TOOLTIP:0
+HEAD_OF_ADMINISTRATION_TOOLTIP:0
+WISE_ADVISORS_TOOLTIP:0
+TRUE_RULER_TOOLTIP:0
+SOUND_FOUNDATIONS_TOOLTIP:0
+BRIBERY_TOOLTIP:0
+DIPLOMATIC_MASTER_TOOLTIP:0
+AMBASSADORS_TOOLTIP:0
+CONSTRUCTION_FOCUS_TOOLTIP:0
+HOLDING_FOCUS_TOOLTIP:0
+COMMERCE_FOCUS_TOOLTIP:0
+WEALTH_FOCUS_TOOLTIP:0
+CONSTRUCTION_LEADER_TOOLTIP:0
+LAND_APPROPRIATION_TOOLTIP:0
+HOLDING_ORGANIZATION_TOOLTIP:0
+LOCAL_FORUMS_TOOLTIP:0
+INCREASED_TARIFFS_TOOLTIP:0
+TAXATION_POLICIES_TOOLTIP:0
+GRAIN_DISTIBUTION_TOOLTIP:0
+LOCAL_ADMINISTRATORS_TOOLTIP:0
+MASTER_OF_TRADE_TOOLTIP:0
+DIVINITY_FOCUS_TOOLTIP:0
+PHILOSOPHY_FOCUS_TOOLTIP:0
+PREISTLY_SUPPORT_FOCUS_TOOLTIP:0
+PIETY_FOCUS_TOOLTIP:0
+PATRONIZE_TEMPLES_TOOLTIP:0
+OBSERVE_RITUALS_TOOLTIP:0
+DIVINE_MANDATE_TOOLTIP:0
+RELIGOUS_CALENDAR_TOOLTIP:0
+RELIGOUS_MANDATE_TOOLTIP:0
+DIVINE_OFFERINGS_TOOLTIP:0
+CONVERSION_POLICIES_TOOLTIP:0
+LEGENDARY_ANCESTORS_TOOLTIP:0
+PROSPERITY_FOR_ALL_TOOLTIP:0
+HEAD_OF_FAITH_TOOLTIP:0
+MARTIAL_FOCUS_AVAILABLE_TOOLTIP:0
+has_1_martial_perk_tooltip:0
+ORATORY_FOCUS_AVAILABLE_TOOLTIP:0
+has_1_oratory_perk_tooltip:0
+CIVIC_FOCUS_AVAILABLE_TOOLTIP:0
+has_1_civic_perk_tooltip:0
+ZEAL_FOCUS_AVAILABLE_TOOLTIP:0
+has_1_zeal_perk_tooltip:0
+character_focus_events.1.t:0
+character_focus_events.1.desc:0
+character_focus_events.1.a:0
+character_focus_events.2.t:0
+character_focus_events.2.desc:0
+character_focus_events.2.a:0
+GOV_TRADE_TT:0
+GOV_TRADE_VALUE_TT:0
+UPGRADE_TRADE_CENTER_TT:0
+GOV_INCOME_TT:0
+GO_TO_PROVINCE_TOOLTIP:0
+max_level_trade_center_tt:0
+COUNTRY_FLAG_TTT:0
+SHOW_ALL_BLOODLINES__TT:0
+AMBER_TRADE_LEADER_TT:0
+BASE_METALS_LEADER_TT:0
+CAMELS_LEADER_TT:0
+CATTLE_LEADER_TT:0
+CLOTH_LEADER_TT:0
+DATES_LEADER_TT:0
+DYE_LEADER_TT:0
+EARTHWARE_LEADER_TT:0
+ELEPHANTS_LEADER_TT:0
+FISH_LEADER_TT:0
+FUR_LEADER_TT:0
+GEMS_LEADER_TT:0
+GLASS_LEADER_TT:0
+GRAIN_LEADER_TT:0
+HEMP_LEADER_TT:0
+HONEY_LEADER_TT:0
+HORSES_LEADER_TT:0
+INCENSE_LEADER_TT:0
+IRON_LEADER_TT:0
+LEATHER_LEADER_TT:0
+MARBLE_LEADER_TT:0
+OLIVE_LEADER_TT:0
+SALT_LEADER_TT:0
+PAPYRUS_LEADER_TT:0
+PRECIOUS_METALS_LEADER_TT:0
+SILK_LEADER_TT:0
+SPICES_LEADER_TT:0
+STEPPE_HORSES_LEADER_TT:0
+STONE_LEADER_TT:0
+VEGETABLES_LEADER_TT:0
+WILD_GAME_LEADER_TT:0
+WINE_LEADER_TT:0
+WOOD_LEADER_TT:0
+SUGAR_LEADER_TT:0
+CEDAR_LEADER_TT:0
+MYRRH_LEADER_TT:0
+CINNABAR_LEADER_TT:0
+LAPIS_LEADER_TT:0
+JADE_LEADER_TT:0
+FRUITS_LEADER_TT:0
+SILPHIUM_LEADER_TT:0
+this_is_already_the_trade_good_focus_tt:0
+current_trade_good_focus_loc_1:0
+current_trade_good_focus_loc_2:0
+current_trade_good_focus_loc_3:0
+current_trade_good_focus_loc_4:0
+current_trade_good_focus_loc_5:0
+current_trade_good_focus_loc_6:0
+current_trade_good_focus_loc_7:0
+current_trade_good_focus_loc_8:0
+current_trade_good_focus_loc_9:0
+current_trade_good_focus_loc_10:0
+current_trade_good_focus_loc_11:0
+current_trade_good_focus_loc_12:0
+current_trade_good_focus_loc_13:0
+current_trade_good_focus_loc_14:0
+current_trade_good_focus_loc_15:0
+current_trade_good_focus_loc_16:0
+current_trade_good_focus_loc_17:0
+current_trade_good_focus_loc_18:0
+current_trade_good_focus_loc_19:0
+current_trade_good_focus_loc_20:0
+current_trade_good_focus_loc_21:0
+current_trade_good_focus_loc_22:0
+current_trade_good_focus_loc_23:0
+current_trade_good_focus_loc_24:0
+current_trade_good_focus_loc_25:0
+current_trade_good_focus_loc_26:0
+current_trade_good_focus_loc_27:0
+current_trade_good_focus_loc_28:0
+current_trade_good_focus_loc_29:0
+current_trade_good_focus_loc_30:0
+current_trade_good_focus_loc_31:0
+current_trade_good_focus_loc_32:0
+current_trade_good_focus_loc_34:0
+current_trade_good_focus_loc_35:0
+current_trade_good_focus_loc_36:0
+current_trade_good_focus_loc_37:0
+current_trade_good_focus_loc_38:0
+current_trade_good_focus_loc_39:0
+current_trade_good_focus_loc_40:0
+current_trade_good_focus_loc_41:0
+current_trade_good_focus_loc_42:0
+all_amber_provinces_gain:0
+all_iron_provinces_gain:0
+all_camel_provinces_gain:0
+all_cattle_provinces_gain:0
+all_hemp_provinces_gain:0
+all_cloth_provinces_gain:0
+all_dates_provinces_gain:0
+all_dye_provinces_gain:0
+all_earthware_provinces_gain:0
+all_fish_provinces_gain:0
+all_gems_provinces_gain:0
+all_glass_provinces_gain:0
+all_elephants_provinces_gain:0
+all_grain_provinces_gain:0
+all_honey_provinces_gain:0
+all_horses_provinces_gain:0
+all_incense_provinces_gain:0
+all_base_metals_provinces_gain:0
+all_leather_provinces_gain:0
+all_marble_provinces_gain:0
+all_olive_provinces_gain:0
+all_salt_provinces_gain:0
+all_papyrus_provinces_gain:0
+all_precious_metals_provinces_gain:0
+all_silk_provinces_gain:0
+all_spices_provinces_gain:0
+all_steppe_horses_provinces_gain:0
+all_stone_provinces_gain:0
+all_vegetables_provinces_gain:0
+all_wild_game_provinces_gain:0
+all_wine_provinces_gain:0
+all_woad_provinces_gain:0
+all_wood_provinces_gain:0
+all_fur_provinces_gain:0
+all_sugar_provinces_gain:0
+all_cedar_provinces_gain:0
+all_myrrh_provinces_gain:0
+all_cinnabar_provinces_gain:0
+all_lapis_provinces_gain:0
+all_jade_provinces_gain:0
+all_fruits_provinces_gain:0
+all_silphium_provinces_gain:0
+trade_center_map_icon:0
+after_2_years_tooltip:0
+ee_events.1.t:0
+ee_events.1.desc:0
+ee_events.1.a:0
+ee_events.2.t:0
+ee_events.2.desc:0
+ee_events.2.a:0
+ee_events.3.t:0
+ee_events.3.desc:0
+ee_events.3.a:0
+ee_events.4.t:0
+ee_events.4.desc:0
+ee_events.4.a:0
+regional_center_of_trade_level_1:0
+regional_center_of_trade_level_1_desc:0
+regional_center_of_trade_level_2:0
+regional_center_of_trade_level_2_desc:0
+regional_center_of_trade_level_3:0
+regional_center_of_trade_level_3_desc:0
+regional_center_of_trade_level_4:0
+regional_center_of_trade_level_4_desc:0
+regional_center_of_trade_level_5:0
+regional_center_of_trade_level_5_desc:0
+control_of_regional_trade_mod:0
+control_of_regional_trade_mod_desc:0
+dominating_regional_trade:0
+dominating_regional_trade_desc:0
+trade_hegemony_mod:0
+trade_hegemony_mod_desc:0
+upgrading_trade_center:0
+trading_in_amber_mod:0
+trading_in_base_metals_mod:0
+trading_in_camels_mod:0
+trading_in_livestock_mod:0
+trading_in_cloth_mod:0
+trading_in_dates_mod:0
+trading_in_dye_mod:0
+trading_in_earthware_mod:0
+trading_in_elephants_mod:0
+trading_in_fish_mod:0
+trading_in_fur_mod:0
+trading_in_fur_mod_desc:0
+trading_in_gems_mod:0
+trading_in_glass_mod:0
+trading_in_grain_mod:0
+trading_in_hemp_mod:0
+trading_in_honey_mod:0
+trading_in_horses_mod:0
+trading_in_incense_mod:0
+trading_in_iron_mod:0
+trading_in_leather_mod:0
+trading_in_marble_mod:0
+trading_in_olive_mod:0
+trading_in_salt_mod:0
+trading_in_papyrus_mod:0
+trading_in_precious_metals_mod:0
+trading_in_silk_mod:0
+trading_in_spices_mod:0
+trading_in_steppe_horses_mod:0
+trading_in_stone_mod:0
+trading_in_vegetables_mod:0
+trading_in_wild_game_mod:0
+trading_in_wine_mod:0
+trading_in_wood_mod:0
+trading_in_sugar_mod:0
+trading_in_cedar_mod:0
+trading_in_myrrh_mod:0
+trading_in_cinnabar_mod:0
+trading_in_lapis_mod:0
+trading_in_fruits_mod:0
+trading_in_silphium_mod:0
+production_focus:0
+production_focus_desc:0
+SHOW_ALCIMACHID_CHARACTERS:0
+SHOW_ANTIGONID_CHARACTERS:0
+SHOW_ANTIPATRID_CHARACTERS:0
+SHOW_ARGEAD_CHARACTERS:0
+SHOW_LAGIDS_CHARACTERS:0
+SHOW_SELEUCID_CHARACTERS:0
+SHOW_AIKOS_CHARACTERS:0
+SHOW_AGIAD_CHARACTERS:0
+SHOW_ACHAEMENID_CHARACTERS:0
+SHOW_MAURYA_CHARACTERS:0
+SHOW_ZADOK_CHARACTERS:0
+SHOW_AGATHOCLES_CHARACTERS:0
+SHOW_ORONTID_CHARACTERS:0
+SHOW_ATROPATES_CHARACTERS:0
+SHOW_BARCA_CHARACTERS:0
+SHOW_ARSACES_CHARACTERS:0
+SHOW_SPARTOCID_CHARACTERS:0
+SHOW_SOPHYTID_CHARACTERS:0
+SHOW_DIODOTUS_CHARACTERS:0
+SHOW_BRENUS_CHARACTERS:0
+SHOW_ILLYRIUS_CHARACTERS:0
+SHOW_CLAUDII_CHARACTERS:0
+SHOW_CORNELII_CHARACTERS:0
+SHOW_DEMOSTHENID_CHARACTERS:0
+SHOW_MITHRIDATES_CHARACTERS:0
+SHOW_SUPERBUS_CHARACTERS:0
+SHOW_VERCINGETORIX_CHARACTERS:0
+SHOW_CHOLA_CHARACTERS:0
+SHOW_PANDYA_CHARACTERS:0
+SHOW_CHERA_CHARACTERS:0
+SHOW_KALINGA_CHARACTERS:0
+SHOW_MAGONID_CHARACTERS:0
+SHOW_HANNONID_CHARACTERS:0
+SHOW_DIDO_CHARACTERS:0
+SHOW_PORUS_CHARACTERS:0
+SHOW_VIJAYA_CHARACTERS:0
+SHOW_ARIOVISTID_CHARACTERS:0
+SHOW_BATTIAD_CHARACTERS:0
+SHOW_MENANDER_CHARACTERS:0
+SHOW_BHARATA_CHARACTERS:0
+SHOW_ARATUS_CHARACTERS:0
+SHOW_DAVID_CHARACTERS:0
+SHOW_ZIPOETES_CHARACTERS:0
+there_are_no_alchimachid:0
+there_are_no_antigonids:0
+there_are_no_antipatrid:0
+there_are_no_argeads:0
+there_are_no_lagids:0
+there_are_no_seleucids:0
+there_are_no_aeacidae:0
+there_are_no_agiad:0
+there_are_no_achaemenid:0
+there_are_no_maurya:0
+there_are_no_zadok:0
+there_are_no_agathocles:0
+there_are_no_orontid:0
+there_are_no_atropates:0
+there_are_no_barca:0
+there_are_no_arsaces:0
+there_are_no_spartocid:0
+there_are_no_sophytid:0
+there_are_no_diodotus:0
+there_are_no_brennus:0
+there_are_no_illyrius:0
+there_are_no_claudii:0
+there_are_no_cornelii:0
+there_are_no_demosthenid:0
+there_are_no_mithridates:0
+there_are_no_superbus:0
+there_are_no_vercingetorix:0
+there_are_no_chola:0
+there_are_no_pandya:0
+there_are_no_chera:0
+there_are_no_kalinga:0
+there_are_no_magonid:0
+there_are_no_hannonid:0
+there_are_no_dido:0
+there_are_no_blood_of_porus:0
+there_are_no_blood_of_vijaya:0
+there_are_no_blood_of_zipoetes:0
+there_are_no_ariovistid:0
+there_are_no_battiad:0
+there_are_no_blood_of_menander:0
+there_are_no_blood_of_bharata:0
+there_are_no_blood_of_aratus:0
+there_are_no_blood_of_david:0
+ game_concept_date:0
+ game_concept_date_desc:0
+ game_concept_country:0
+ game_concept_countries:0
+ COUNTRY_CONCEPT_TOOLTIP:0
+ game_concept_country_desc:1
+ game_concept_ruler:0
+ game_concept_ruler_desc:0
+ game_concept_territory:0
+ game_concept_territories:0
+ game_concept_territory_desc:1
+ game_concept_family:0
+ game_concept_families:0
+ game_concept_family_desc:0
+ game_concept_character:0
+ game_concept_characters:0
+ game_concept_people:0
+ game_concept_character_desc:1
+ game_concept_government:0
+ game_concept_government_desc:0
+ game_concept_poptype:0
+ game_concept_poptypes:0
+ POPTYPE_CONCEPT_DESCRIPTION:1
+ game_concept_poptype_desc:0
+ game_concept_culture:0
+ game_concept_cultures:0
+ game_concept_culture_desc:1
+ CULTURE_LINK_TEXT:1
+ game_concept_religion:0
+ game_concept_religions:0
+ game_concept_religion_desc:1
+ game_concept_deity:0
+ game_concept_deities:0
+ game_concept_deity_desc:0
+ DEITY_LINK_TEXT:
+ game_concept_culture_group:0
+ game_concept_culture_groups:0
+ game_concept_culture_group_desc:1
+ game_concept_law:0
+ game_concept_laws:0
+ game_concept_law_desc:0
+ LAW_LINK_TEXT:0
+ game_concept_tradegood:0
+ game_concept_tradegoods:0
+ game_concept_tradegood_desc:
+ TRADEGOOD_LINK_TEXT:0
+ game_concept_horde:0
+ game_concept_hordes:0
+ game_concept_horde_desc:0
+ HORDE_LINK_TEXT:0
+ COMBAT_LINK_TEXT:0
+ game_concept_pop:0
+ game_concept_pops:0
+ game_concept_pop_desc:1
+ game_concept_subunit:0
+ game_concept_subunits:0
+ game_concept_subunit_desc:1
+ game_concept_treasure:0
+ game_concept_treasures:0
+ game_concept_treasure_desc:0
+ TREASURE_LINK_TEXT:0
+ game_concept_unit:0
+ game_concept_units:0
+ game_concept_unit_desc:
+ game_concept_siege:0
+ game_concept_sieges:0
+ game_concept_siege_desc:0
+ SIEGE_LINK_TEXT:0
+ game_concept_area:0
+ game_concept_areas:0
+ game_concept_area_desc:0
+ GAME_AREA_TOOLTIP:0
+ GAME_AREA_PROVINCES_TITLE:0
+ GAME_AREA_STATES_TITLE:0
+ game_concept_region:0
+ game_concept_regions:0
+ game_concept_region_desc:0
+ GAME_REGION_TOOLTIP:0
+ GAME_REGION_AREAS_TITLE:0
+ GAME_REGION_GOVERNORSHIPS_TITLE:0
+ game_concept_province:1
+ game_concept_provinces:1
+ game_concept_province_desc:
+ GAME_STATE_TOOLTIP:0
+ GAME_STATE_PROVINCES_TITLE:0
+ game_concept_governorship:0
+ game_concept_governorships:0
+ game_concept_governorship_desc:1
+ GAME_GOVERNORSHIP_TOOLTIP:1
+ GAME_GOVERNORSHIP_STATES_TITLE:0
+ game_concept_governor:0
+ game_concept_governors:0
+ game_concept_governor_desc:
+ game_concept_agenda:0
+ game_concept_agendas:0
+ game_concept_party_agenda:0
+ game_concept_agenda_desc:0
+ game_concept_party:0
+ game_concept_parties:0
+ game_concept_party_type:0
+ game_concept_party_types:0
+ game_concept_party_desc:0
+ game_concept_building:0
+ game_concept_buildings:0
+ game_concept_building_desc:
+ GAME_BUILDING_TOOLTIP:0
+ game_concept_cultural_right:0
+ game_concept_cultural_rights:0
+ game_concept_cultural_right_desc:0
+ game_concept_integrated_culture:0
+ game_concept_integrated_cultures:0
+ game_concept_integrated_culture_desc:1
+ game_concept_non_integrated_culture:0
+ game_concept_non_integrated_cultures:0
+ game_concept_non_integrated_culture_desc:1
+ game_concept_primary_culture:0
+ game_concept_primary_culture_desc:1
+ game_concept_integration:0
+ game_concept_integrate:0
+ game_concept_integrated:0
+ game_concept_integration_desc:1
+ game_concept_assimilation:0
+ game_concept_assimilate:0
+ game_concept_assimilated:0
+ game_concept_assimilation_desc:1
+ GAME_LOYALTY_TOOLTIP_TITLE:0
+ game_concept_loyalty:0
+ game_concept_loyalty_i:0
+ game_concept_loyalty_desc:0
+ game_concept_province_rank:1
+ game_concept_province_rank_desc:1
+ GAME_PROVINCE_RANK_TOOLTIP_ACTIVE_DESC:0
+ game_concept_terrain:0
+ game_concept_terrain_type:0
+ game_concept_terrain_types:0
+ game_concept_terrain_desc:1
+ GAME_TERRAIN_TYPE_TOOLTIP_DEFENSIVE_BONUS:0
+ GAME_TERRAIN_TYPE_TOOLTIP_COMBAT_WIDTH:1
+ GAME_TERRAIN_TYPE_TOOLTIP_MODIFIER:0
+ game_concept_heritage:0
+ game_concept_heritage_desc:1
+ GAME_HERITAGE_TOOLTIP:0
+ game_concept_diplomatic_stance:0
+ game_concept_diplomatic_stances:0
+ game_concept_diplomatic_stance_desc:0
+ GAME_DIPLOMATIC_STANCE_TOOLTIP:0
+ game_concept_innovation:0
+ game_concept_innovations:0
+ game_concept_innovation_desc:0
+ game_concept_idea:0
+ game_concept_ideas:0
+ game_concept_national_idea:0
+ game_concept_national_ideas:0
+ game_concept_idea_desc:1
+ GAME_IDEA_TOOLTIP:0
+ GAME_IDEA_ITEM_TOOLTIP:0
+ game_concept_idea_group:0
+ game_concept_idea_groups:0
+ game_concept_idea_group_desc:0
+ GAME_IDEA_GROUP_TOOLTIP:0
+ GAME_TOOLTIP_DOES_NOT_MEET_CRITERIA:0
+ GAME_CULTURE_DECISION_ITEM_EFFECT_DESC:0
+ GAME_CULTURE_DECISION_ITEM_ALLOWED_DESC:0
+ GAME_PLAYER_DECISION_EFFECT_DESC:0
+ GAME_PLAYER_DECISION_ALLOWED_DESC:0
+ game_concept_decision:0
+ game_concept_decisions:0
+ game_concept_culture_decision:0
+ game_concept_culture_decisions:0
+ game_concept_decision_desc:0
+ game_concept_legion:0
+ game_concept_legions:0
+ game_concept_legion_desc:
+ game_concept_distinction:0
+ game_concept_distinctions:0
+ game_concept_dishonors:0
+ game_concept_honors:0
+ game_concept_distinctions_desc:1
+ game_concept_legate:0
+ game_concept_legates:0
+ game_concept_legate_desc:0
+ game_concept_tribune:0
+ game_concept_tribunes:0
+ game_concept_tribune_desc:0
+ GAME_LEGION_TOOLTIP:1
+ GAME_TOOLTIP_UNITS_HEADER:1
+ GAME_TOOLTIP_LEAD_BY_HEADER:1
+ GAME_LEGION_TOOLTIP_HISTORY_HEADER:1
+ GAME_LEGION_TOOLTIP_DISTINCTIONS:1
+ GAME_LEGION_TOOLTIP_DISTINCTIONS_MODIFIERS:0
+ game_concept_invention:0
+ game_concept_inventions:0
+ game_concept_invention_desc:0
+ GAME_GENERIC_EFFECT_HEADER:0
+ GAME_GENERIC_MODIFIER_HEADER:0
+ GAME_GENERIC_DEPENDS_HEADER:0
+ GAME_GENERIC_PRICE_HEADER:0
+ GAME_GENERIC_UNLOCK_TEXT:0
+ LEVY_COMPOSITION_ENTRY:0
+ game_concept_military_bonus:0
+ game_concept_military_bonuses:0
+ game_concept_military_bonus_desc:0
+ game_concept_legion_commanders:0
+ game_concept_legion_commanders_desc:0
+ game_concept_legion_reassignment:0
+ game_concept_legion_reassignment_desc:0
+ READ_MORE_ABOUT:0
+POP_INTERACTIONS_TITLE_TT:0
+SEND_PRIEST_TO_PROVINCE_TT:0
+POP_INTERACTIONS_TT:0
+SEND_MERCHANT_TO_PROVINCE_TT:0
+SEND_ARCHITECT_TO_PROVINCE_TT:0
+SEND_ARTIST_TO_PROVINCE_TT:0
+send_priest_maximum_tt:0
+send_merchant_maximum_tt:0
+send_architect_maximum_tt:0
+send_artists_maximum_tt:0
+artists_value_loc_1:0
+artists_value_loc_2:0
+artists_value_loc_3:0
+merchants_value_loc_1:0
+merchants_value_loc_2:0
+merchants_value_loc_3:0
+architects_value_loc_1:0
+architects_value_loc_2:0
+architects_value_loc_3:0
+priests_value_loc_1:0
+priests_value_loc_2:0
+priests_value_loc_3:0
+add_1_priest_tooltip:0
+add_1_merchant_tooltip:0
+add_1_architect_tooltip:0
+add_1_artist_tooltip:0
+special_pops_require_at_least_1_noble_pop:0
+ PRIESTS:0
+ PRIESTS_DESC:0
+priests:0
+architects:0
+artists:0
+merchants:0
+priests_converting_population_mod:0
+merchants_in_province_mod:0
+architects_in_province_mod:0
+artists_in_province_mod:0
+mpe_events.2.t:0
+mpe_events.2.desc:0
+mpe_events.2.a:0
+mpe_events.2.b:0
+artists_arrived_effect:0
+architect_arrived_effect:0
+merchant_arrived_effect:0
+priest_arrived_effect:0
+get_priest_icon:0
+get_merchant_icon:0
+get_architect_icon:0
+get_artist_icon:0
