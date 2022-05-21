@@ -13,10 +13,6 @@ AUTOless_Trans 并不能自动的机翻
 2) <del>自动以1w或5k字分割word文档</del>
 3) 适配paratranz的json
 <<<<<<< HEAD
-
-
-
-original\\english\\00_subject_rework_l_english.yml
 =======
 4) 识别出文本中不需要翻译的部分
 >>>>>>> 4bfb7d9d6608333f9e1bcaf2578891041a4eb0ce
