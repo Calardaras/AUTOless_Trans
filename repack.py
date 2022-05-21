@@ -72,15 +72,5 @@ for curr_docx_name in file_docx_name_list:
                 )
                 j+=1
 
-                
 
-# for paragraph in document.paragraphs:
-#     if j< int(index[i])-1:
-#         curr_f.write(re.search('^[^(\n)]+',key_l[j]).group(0) +' '+ paragraph.text +'\n')
-#         j+=1
-#     else:
-#         curr_f.close()
-#         i+=1
-#         curr_f = open( path_otp  + '\\' + re.search('[^\\]+?(?=(_l_english))',re.search('^[^,]+', file_name[i]).group(0)).group(0) + '_l_simp_chinese.yml','w+',encoding="utf-8-sig") 
-#         curr_f.write('l_simp_chinese:\n')
-#这将使人口增长增加5%，并使我们的学科建设成本和时间减少10%，成本将取决于我们有多少学科，学科重点只能每5年改变一次。\n
+                
