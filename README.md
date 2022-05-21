@@ -16,4 +16,5 @@ AUTOless_Trans 并不能自动的机翻
 3) <del>适配paratranz的json</del>
 4) <del>提取无格式的文本</del>
 5) 想办法恢复格式
+6) 优化逻辑
 
