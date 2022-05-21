@@ -9,5 +9,5 @@
 <br>
 ##todo
 1) <del>遍历子文件夹</del>
-2) 自动以1w或5k字分割word文档<br>
-3) 适配paratranz的json<br>
+2) 自动以1w或5k字分割word文档
+3) 适配paratranz的json
