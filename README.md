@@ -1,5 +1,6 @@
-AUTOless_Trans 自用P社游戏mod手动机翻
+AUTOless_Trans
 ===================================
+自用P社游戏mod手动机翻
 用法
 -----------------------------------
 1.将localization里的english文件夹放入original，运行compose.py<br>
