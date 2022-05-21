@@ -40,37 +40,67 @@ for curr_docx_name in file_docx_name_list:
     i = 0
     j = 0
     curr_docx = Document(curr_docx_name)
-    curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.json','w+',encoding="utf-8-sig") 
-    curr_json.write('[\n')
+    curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
     for paragraph in curr_docx.paragraphs:
         if paragraph.text != '':
             if j< int(index[i])-1:
                 translation = re.sub('"','',paragraph.text)
                 translation = '"' + re.sub('\n','',translation) + '"' 
-                curr_json.write(
-                    ' {\n'+
-                    '  \"key\": "' + re.search('^[^(\n)]+',key_l[j]).group(0) +'",\n'+
-                    '  \"original\":' + original_l[j] +',\n'+
-                    '  \"translation\": ' + translation +',\n'+
-                    '  \"stage\":' + str(1) +'\n'+
-                    ' },\n'
-                )
+                original = re.sub('\n','',original_l[j])
+                curr_json.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
                 j+=1
             else:
-                curr_json.write('\]')
                 curr_json.close()
                 i+=1
-                curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.json','w+',encoding="utf-8-sig") 
-                curr_json.write(
-                    '[\n'+
-                    ' {\n'+
-                    '  \"key\": "' + re.search('^[^(\n)]+',key_l[j]).group(0) +'",\n'+
-                    '  \"original\":' + original_l[j] +',\n'+
-                    '  \"translation\": ' + translation  +',\n'+
-                    '  \"stage\":' + str(1) +'\n'+
-                    ' },\n'
-                )
+                curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+                translation = re.sub('"','',paragraph.text)
+                translation = '"' + re.sub('\n','',translation) + '"' 
+                original = re.sub('\n','',original_l[j])
+                curr_json.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
                 j+=1
-
+    curr_json.close()
+# for curr_docx_name in file_docx_name_list:
+#     i = 0
+#     j = 0
+#     curr_docx = Document(curr_docx_name)
+#     rename = re.sub('l_english','l_simp_chinese',file_name[i])
+#     curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#     curr_json.write('[\n')
+#     for paragraph in curr_docx.paragraphs:
+#         if paragraph.text != '':
+#             if j< int(index[i])-1:
+#                 translation = re.sub('"','',paragraph.text)
+#                 translation = '"' + re.sub('\n','',translation) + '"' 
+#                 original = re.sub('\n','',original_l[j])
+#                 curr_json.write(
+#                     ' {\n'+
+#                     '  \"key\": "' + re.search('^[^(\n)]+',key_l[j]).group(0) +'",\n'+
+#                     '  \"original\":' + original +',\n'+
+#                     '  \"translation\": ' + translation +',\n'+
+#                     '  \"stage\":' + str(1) +'\n'+
+#                     ' },\n'
+#                 )
+#                 j+=1
+#             else:
+#                 curr_json.write(']')
+#                 curr_json.close()
+#                 i+=1
+#                 rename = re.sub('l_english','l_simp_chinese',file_name[i])
+#                 curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#                 curr_json.write('[\n')
+#                 translation = re.sub('"','',paragraph.text)
+#                 translation = '"' + re.sub('\n','',translation) + '"' 
+#                 original = re.sub('\n','',original_l[j])
+#                 curr_json.write(
+#                     ' {\n'+
+#                     '  \"key\": "' + re.search('^[^(\n)]+',key_l[j]).group(0) +'",\n'+
+#                     '  \"original\":' + original +',\n'+
+#                     '  \"translation\": ' + translation +',\n'+
+#                     '  \"stage\":' + str(1) +'\n'+
+#                     ' },\n'
+#                 )
+#                 j+=1
+#     curr_json.write('{}]')
+#     curr_json.close()
 
                 
