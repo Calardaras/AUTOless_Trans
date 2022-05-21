@@ -1,5 +1,0 @@
-00_subject_rework_l_english.yml,148
-character_focus_l_english.yml,351
-economic_enchancement_l_english.yml,644
-game_concepts_l_english.yml,851
-province_ranks_l_english.yml,900

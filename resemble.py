@@ -31,12 +31,11 @@ j = 0
 curr_f = open( path_otp  + '\\' + re.search('.+(?=(_l_english))',re.search('^[^,]+', file_name[i]).group(0)).group(0) + '_l_simp_chinese.yml','w+',encoding="utf-8") 
 curr_f.write('l_simp_chinese:\n')
 for paragraph in document.paragraphs:
-    if j< int(index[i]):
-        curr_f.write(re.search('^[^(\n)]+',key_l[i]).group(0) +' '+ paragraph.text +'\n')
+    if j< int(index[i])-1:
+        curr_f.write(re.search('^[^(\n)]+',key_l[j]).group(0) +' '+ paragraph.text +'\n')
         j+=1
     else:
+        curr_f.close()
+        i+=1
         curr_f = open( path_otp  + '\\' + re.search('.+(?=(_l_english))',re.search('^[^,]+', file_name[i]).group(0)).group(0) + '_l_simp_chinese.yml','w+',encoding="utf-8") 
         curr_f.write('l_simp_chinese:\n')
-        i+=1
-
-
