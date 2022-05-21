@@ -6,6 +6,6 @@
 <br>
 尚未完工<br>
 todo：<br>
-0) 忘记遍历子文件夹了<br>
-1) 自动以1w或5k字分割word文档<br>
-2) 适配paratranz的json<br>
+1) 忘记遍历子文件夹了<br>
+2) 自动以1w或5k字分割word文档<br>
+3) 适配paratranz的json<br>
