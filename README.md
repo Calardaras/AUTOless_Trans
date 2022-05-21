@@ -12,3 +12,4 @@ AUTOless_Trans 并不能自动的机翻
 1) <del>遍历子文件夹</del>
 2) <del>自动以1w或5k字分割word文档</del>
 3) 适配paratranz的json
+4) 识别出文本中不需要翻译的部分
