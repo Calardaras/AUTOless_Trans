@@ -21,7 +21,7 @@ for line in value_f :
     re_line = re.sub('#!','',re_line)
     re_line = re.sub('\\n','',re_line)
     re_line = re_line + '\n'
-    if count + len(re_line) < 100000:
+    if count + len(re_line) < 100000:  #文档字符限制 默认100000
         curr_f.write(re_line)
         curr_d.add_paragraph(re_line)
         count += len(re_line)
