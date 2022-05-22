@@ -15,6 +15,7 @@ AUTOless_Trans 并不能自动的机翻
 2) <del>自动以1w或5k字分割word文档</del>
 3) <del>适配paratranz的json</del>
 4) <del>提取无格式的文本</del>
-5) 想办法恢复格式
-6) 优化逻辑
+5) 匹配原版游戏已翻译的部分
+6) 想办法恢复格式
+7) 优化逻辑
 
