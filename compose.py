@@ -28,13 +28,15 @@ file_name_list = file_search_to_list(path_org)
 index = 1 
 for crr_file in file_name_list:
     org_f = open( crr_file ,'r',encoding="utf-8-sig") 
-    next(org_f) #跳过首行
     for line in org_f:  #通过迭代器访问
-        # if re.search('^( ?)#.+',line):
-        #     continue
-        # else:
-        if re.search('^( ?)[^#][^:]+?:\d?',line):
-            key_f.write(re.search('^( ?)[^#][^:]+?:\d?',line).group(0)+'\n')
-            vaule_f.write(re.search('".*"',line).group(0)+'\n')
-            index += 1
+        comm_check = re.match('^( *)#+',line)
+        if comm_check != None:
+            continue
+        else:
+            key_check = re.search('^( ?)[^#][^:]+?:\d?',line)
+            head_check = re.search('l_english',line)
+            if key_check != None and head_check == None:
+                key_f.write(re.search('^( ?)[^#][^:]+?:\d?',line).group(0)+'\n')
+                vaule_f.write(re.search('".*"',line).group(0)+'\n')
+                index += 1
     contents_f.write(crr_file+','+str(index)+'\n')

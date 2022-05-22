@@ -26,7 +26,9 @@ for line in value_f :
         curr_d.add_paragraph(re_line)
         count += len(re_line)
     else:
+        print(count)
         curr_d.save(path_bfr + '\\' + 'value_'+ str(i) +'.docx')
+        curr_d = docx.Document()
         i += 1
         curr_f = open( path_bfr + '\\' + 'value_'+ str(i) +'.txt' ,'w+',encoding="utf-8-sig") 
         count = 0

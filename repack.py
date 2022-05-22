@@ -7,6 +7,15 @@ path_tmp = "process"
 path_bfr = "tobetrans"
 path_aft = "transed"
 
+def count_files(path):
+    num = 0
+    for root,dirs,files in os.walk(path):
+        for file in files:
+            all_file_path = os.path.join(root,file)
+            file_name_and_format = os.path.splitext(all_file_path)
+            if file_name_and_format[1] == '.docx':
+                num += 1
+    return num
 def file_search_to_list(path):
     L = []
     for root,dirs,files in os.walk(path):
@@ -35,44 +44,44 @@ for content in contents_f:
     index.append(re.search('[^,]+$', content).group(0))
 
 contents_f.close()
-file_docx_name_list = file_search_to_list(path_aft)
-for curr_docx_name in file_docx_name_list:
-    i = 0
-    j = 0
-    curr_docx = Document(curr_docx_name)
-    curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+
+i = 0
+j = 0
+curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+for order in range(count_files(path_aft)):
+    curr_docx = Document(path_aft+'\\value_'+ str(order) +' zh.docx')
+    print('开始处理'+'value_'+ str(order) +' zh.docx')
     for paragraph in curr_docx.paragraphs:
         if paragraph.text != '':
             if j< int(index[i])-1:
                 translation = re.sub('"','',paragraph.text)
                 translation = '"' + re.sub('\n','',translation) + '"' 
-                original = re.sub('\n','',original_l[j])
-                curr_json.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
+                curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
                 j+=1
             else:
-                curr_json.close()
+                curr_yml.close()
                 i+=1
-                curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+                curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
                 translation = re.sub('"','',paragraph.text)
                 translation = '"' + re.sub('\n','',translation) + '"' 
-                original = re.sub('\n','',original_l[j])
-                curr_json.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
+                curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
                 j+=1
-    curr_json.close()
+curr_yml.close()
+
 # for curr_docx_name in file_docx_name_list:
 #     i = 0
 #     j = 0
 #     curr_docx = Document(curr_docx_name)
 #     rename = re.sub('l_english','l_simp_chinese',file_name[i])
-#     curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
-#     curr_json.write('[\n')
+#     curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#     curr_yml.write('[\n')
 #     for paragraph in curr_docx.paragraphs:
 #         if paragraph.text != '':
 #             if j< int(index[i])-1:
 #                 translation = re.sub('"','',paragraph.text)
 #                 translation = '"' + re.sub('\n','',translation) + '"' 
 #                 original = re.sub('\n','',original_l[j])
-#                 curr_json.write(
+#                 curr_yml.write(
 #                     ' {\n'+
 #                     '  \"key\": "' + re.search('^[^(\n)]+',key_l[j]).group(0) +'",\n'+
 #                     '  \"original\":' + original +',\n'+
@@ -82,16 +91,16 @@ for curr_docx_name in file_docx_name_list:
 #                 )
 #                 j+=1
 #             else:
-#                 curr_json.write(']')
-#                 curr_json.close()
+#                 curr_yml.write(']')
+#                 curr_yml.close()
 #                 i+=1
 #                 rename = re.sub('l_english','l_simp_chinese',file_name[i])
-#                 curr_json = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
-#                 curr_json.write('[\n')
+#                 curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#                 curr_yml.write('[\n')
 #                 translation = re.sub('"','',paragraph.text)
 #                 translation = '"' + re.sub('\n','',translation) + '"' 
 #                 original = re.sub('\n','',original_l[j])
-#                 curr_json.write(
+#                 curr_yml.write(
 #                     ' {\n'+
 #                     '  \"key\": "' + re.search('^[^(\n)]+',key_l[j]).group(0) +'",\n'+
 #                     '  \"original\":' + original +',\n'+
@@ -100,7 +109,7 @@ for curr_docx_name in file_docx_name_list:
 #                     ' },\n'
 #                 )
 #                 j+=1
-#     curr_json.write('{}]')
-#     curr_json.close()
+#     curr_yml.write('{}]')
+#     curr_yml.close()
 
                 
