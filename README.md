@@ -7,7 +7,6 @@ AUTOless_Trans 并不能自动的机翻
 -----------------------------------
 ！！永远别机翻地名！！
 ![image](https://github.com/Calardaras/AUTOless_Trans/blob/main/howtouse/readme.jpg)
-不怕bug可以直接run0.bat，把文档机翻完run1.bat
 
 已测试项目
 -----------------------------------
