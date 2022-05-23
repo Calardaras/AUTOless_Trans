@@ -15,8 +15,9 @@ curr_f = open( path_bfr + '\\' + 'norm_value'+'.txt' ,'w+',encoding="utf-8-sig")
 nm_f = open( path_bfr + '\\' + 'norm_misc'+'.txt' ,'w+',encoding="utf-8-sig") 
 
 for line in value_f :
-    substance = re.findall('\$.+?\$|\[.+?\]|\\\\n',line)
-    re_line = re.sub('\$.+?\$|\[.+?\]|\\\\n','<αωα>',line)
+    substance = re.findall('\$.+?\$|\[.+?\]|\\\\n|@.+?\!|#[YGRTFE!]{1,2} *',line)
+    re_line = re.sub('\$.+?\$|\[.+?\]|\\\\n|@.+?\!','<αωα>',line)
+    re_line = re.sub('#[YGRTFE!]{1,2} *','{',re_line)
     nm_f.write('*'.join(substance)+'\n')
     curr_f.write(re_line)
 

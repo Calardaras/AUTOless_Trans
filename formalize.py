@@ -15,7 +15,7 @@ formed_f = open( path_bfr + '\\' + 'form_value'+'.txt' ,'w+',encoding="utf-8-sig
 
 for n_line in normed_f:
     substance = re.search('.*(?=\\n)',nm_f.readline()).group(0)
-    part_l = re.split('<αωα>', n_line)
+    part_l = re.split('<αωα>|{', n_line)
     substance_l = re.split('\*', substance)
     re_line = part_l[0]
     if len(part_l) > 1:
