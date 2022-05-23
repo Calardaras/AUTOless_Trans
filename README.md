@@ -11,7 +11,7 @@ AUTOless_Trans 并不能自动的机翻
 
 测试项目
 -----------------------------------
-https://paratranz.cn/projects/4426/files
+https://paratranz.cn/projects/4426
 效果我还算满意
 
 已有特性
