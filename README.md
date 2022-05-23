@@ -5,13 +5,14 @@ AUTOless_Trans 并不能自动的机翻
 
 用法
 -----------------------------------
-1.将localization里的english文件夹放入original，运行compose.py<br>
-2.手动将生成在process文件夹内的vaule.docx交由第三方翻译器翻译，并更名为tr_va放回<br>
-3.运行decompose.py，输出结果在output内<br>
+！！永远别机翻地名！！
+![image](https://github.com/Calardaras/AUTOless_Trans/blob/main/howtouse/readme.png)
 
 测试项目
 -----------------------------------
-https://paratranz.cn/projects/4426
+名称 总词条 格式错误 占比
+Invictus 33,830 843 2.4327600138520147%。
+
 效果我还算满意
 
 已有特性
