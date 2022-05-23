@@ -2,7 +2,7 @@ import os,sys,re,docx
 from docx import Document
 
 path_org = "original\\english"
-output
+path_otp = "output"
 path_tmp = "process"
 path_bfr = "tobetrans"
 path_aft = "transed"

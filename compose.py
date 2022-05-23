@@ -2,7 +2,7 @@ import os,sys
 import re
 #获取文件列表
 path_org = "original\\english"
-output
+path_otp = "output"
 path_tmp = "process"
 path_bfr = "tobetrans"
 path_aft = "transed"
@@ -27,6 +27,7 @@ file_name_list = file_search_to_list(path_org)
 index = 1 
 for crr_file in file_name_list:
     org_f = open( crr_file ,'r',encoding="utf-8-sig") 
+    print('正在处理'+crr_file)
     for line in org_f:  #通过迭代器访问
         comm_check = re.match('^( *)#+',line)
         if comm_check != None:
@@ -39,3 +40,6 @@ for crr_file in file_name_list:
                 vaule_f.write(re.search('".*"',line).group(0)+'\n')
                 index += 1
     contents_f.write(crr_file+','+str(index)+'\n')
+print('已整合键至'+ path_tmp + '\\' + 'key.txt')
+print('已整合值至'+ path_tmp + '\\' + 'value.txt')
+print('保存目录信息至'+ path_tmp + '\\' + 'contents.txt')

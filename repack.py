@@ -1,8 +1,8 @@
 import os,sys,re,docx
 from docx import Document
 
-path_org = ""
-output
+path_org = "original\\english"
+path_otp = "output"
 path_tmp = "process"
 path_bfr = "tobetrans"
 path_aft = "transed"
@@ -27,9 +27,15 @@ for content in contents_f:
 contents_f.close()
 
 formed_f = open( path_aft + '\\' + 'form_value zh'+'.txt' ,'r',encoding="utf-8-sig") 
+for root,dirs,files in os.walk(path_org):
+    if re.search('(?<=english)[^.]+', root):
+        root = 'output\\' + re.search('(?<=english)[^.]+', root).group(0)
+        if not os.path.exists(root):
+            os.makedirs(root)
 i = 0 #文件引索
 j = 0 #行数
 curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+print(path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml')
 for line in formed_f:
     if line != '':
         if j< int(index[i])-1:
@@ -41,6 +47,7 @@ for line in formed_f:
             curr_yml.close()
             i+=1
             curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+            print(path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml')
             translation = re.sub('"','',line)
             translation = '"' + re.sub('\n','',translation) + '"' 
             curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
