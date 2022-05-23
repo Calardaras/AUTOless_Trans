@@ -8,7 +8,7 @@ AUTOless_Trans 并不能自动的机翻
 ！！永远别机翻地名！！
 ![image](https://github.com/Calardaras/AUTOless_Trans/blob/main/howtouse/readme.jpg)
 
-测试项目
+已测试项目
 -----------------------------------
 |来源游戏 | mod名称 | 总词条 | 格式错误 | 占比 |
 |--------|--------|--------|--------|--------|
