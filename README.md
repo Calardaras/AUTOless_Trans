@@ -6,7 +6,7 @@ AUTOless_Trans 并不能自动的机翻
 用法
 -----------------------------------
 ！！永远别机翻地名！！
-![image](https://github.com/Calardaras/AUTOless_Trans/blob/main/howtouse/readme.png)
+![image](https://github.com/Calardaras/AUTOless_Trans/blob/main/howtouse/readme.jpg)
 
 测试项目
 -----------------------------------
