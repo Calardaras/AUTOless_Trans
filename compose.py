@@ -1,7 +1,7 @@
 import os,sys
 import re
 #获取文件列表
-path_org = "original\\english"
+path_org = "original"
 path_otp = "output"
 path_tmp = "process"
 path_bfr = "tobetrans"

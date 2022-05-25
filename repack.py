@@ -1,7 +1,7 @@
 import os,sys,re,docx
 from docx import Document
 
-path_org = "original\\english"
+path_org = "original"
 path_otp = "output"
 path_tmp = "process"
 path_bfr = "tobetrans"
@@ -26,7 +26,7 @@ for content in contents_f:
 
 contents_f.close()
 
-formed_f = open( path_aft + '\\' + 'form_value zh'+'.txt' ,'r',encoding="utf-8-sig") 
+formed_f = open( path_tmp + '\\' + 'form_value zh'+'.txt' ,'r',encoding="utf-8-sig") 
 for root,dirs,files in os.walk(path_org):
     if re.search('(?<=english)[^.]+', root):
         root = 'output\\' + re.search('(?<=english)[^.]+', root).group(0)
