@@ -35,7 +35,7 @@ for n_line in normed_L:
             formed_f.write(re_line + '"\n')
         else:
             print(str(line_count+1) +'行对应失败,保留原文')
-            formed_f.write('⚠')
+            formed_f.write('⚠\n')
             check_f.write('参考:'+ on_L[line_count])
             check_f.write(str(line_count)+'|'+n_line+'\n')
             error_count += 1

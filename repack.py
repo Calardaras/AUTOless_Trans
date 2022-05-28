@@ -27,34 +27,37 @@ for content in contents_f:
 contents_f.close()
 
 formed_f = open( path_tmp + '\\' + 'form_value zh'+'.txt' ,'r',encoding="utf-8-sig") 
-for root,dirs,files in os.walk(path_org):
-    if re.search('(?<=english)[^.]+', root):
-        root = 'output\\' + re.search('(?<=english)[^.]+', root).group(0)
+for dir in file_name:
+    check = re.search('(?<=original\\\\).+(?=[\\\\])', dir)
+    if check:
+        root = 'output\\' + check.group(0)
         if not os.path.exists(root):
             os.makedirs(root)
 i = 0 #文件引索
 j = 0 #行数
-curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
-print(path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml')
+curr_yml = open( path_otp  + '\\' +  re.search('(?<=original\\\\).+',file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
+print(path_otp  + '\\' +  file_name[i] )
 for line in formed_f:
     if line != '':
         if j< int(index[i])-1:
             translation = re.sub('"','',line)
             translation = '"' + re.sub('\n','',translation) + '"' 
-            curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
+            if not re.search('⚠',translation):
+                curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
             j+=1
         else:
             curr_yml.close()
             i+=1
-            curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
-            print(path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml')
+            curr_yml = open( path_otp  + '\\' +  re.search('(?<=original\\\\).+',file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
+            print(path_otp  + '\\' +  re.search('(?<=original\\\\).+',file_name[i]).group(0) )
             translation = re.sub('"','',line)
             translation = '"' + re.sub('\n','',translation) + '"' 
-            curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
+            if not re.search('⚠',translation):
+                curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
             j+=1
 # i = 0
 # j = 0
-# curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+# curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
 # for order in range(count_files(path_aft)):
 #     curr_docx = Document(path_aft+'\\value_'+ str(order) +' zh.docx')
 #     print('开始处理'+'value_'+ str(order) +' zh.docx')
@@ -68,7 +71,7 @@ for line in formed_f:
 #             else:
 #                 curr_yml.close()
 #                 i+=1
-#                 curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#                 curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
 #                 translation = re.sub('"','',formed_f)
 #                 translation = '"' + re.sub('\n','',translation) + '"' 
 #                 curr_yml.write(re.search('^[^(\n)]+',key_l[j]).group(0) + ' ' + translation +'\n')
@@ -80,7 +83,7 @@ for line in formed_f:
 #     j = 0
 #     curr_docx = Document(curr_docx_name)
 #     rename = re.sub('l_english','l_simp_chinese',file_name[i])
-#     curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#     curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) ,'w+',encoding="utf-8-sig") 
 #     curr_yml.write('[\n')
 #     for paragraph in curr_docx.paragraphs:
 #         if formed_f != '':
@@ -102,7 +105,7 @@ for line in formed_f:
 #                 curr_yml.close()
 #                 i+=1
 #                 rename = re.sub('l_english','l_simp_chinese',file_name[i])
-#                 curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) + '.yml','w+',encoding="utf-8-sig") 
+#                 curr_yml = open( path_otp  + '\\' + re.search('(?<=(\\\\english\\\\))[^.]+', rename).group(0) ,'w+',encoding="utf-8-sig") 
 #                 curr_yml.write('[\n')
 #                 translation = re.sub('"','',formed_f)
 #                 translation = '"' + re.sub('\n','',translation) + '"' 
