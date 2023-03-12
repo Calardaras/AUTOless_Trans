@@ -36,9 +36,16 @@ for crr_file in file_name_list:
             key_check = re.search('^( ?)[^#][^:]+?:\d?',line)
             head_check = re.search('l_english',line)
             if key_check != None and head_check == None:
-                key_f.write(re.search('^( ?)[^#][^:]+?:\d?',line).group(0)+'\n')
-                vaule_f.write(re.search('".*"',line).group(0)+'\n')
-                index += 1
+                key = re.search('^( ?)[^#][^:]+?:\d?',line).group(0)
+                vaule = re.search('".*"',line).group(0)
+                value_check_1 = re.search('^" *"',vaule)
+                value_check_2 = re.search('^"\$\S+\$(#!)*"',vaule)
+                value_check_3 = re.search('^"\(#[YGRTFE!] \[\S+?\]#[YGRTFE!]/#[YGRTFE!]',vaule) 
+                if value_check_1 == None and value_check_2 == None and value_check_3 == None:
+                    key_f.write(key+'\n')
+                    vaule_f.write(vaule+'\n')
+                    index += 1
+                
     contents_f.write(crr_file+','+str(index)+'\n')
 print('已整合键至'+ path_tmp + '\\' + 'key.txt')
 print('已整合值至'+ path_tmp + '\\' + 'value.txt')

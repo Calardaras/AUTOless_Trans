@@ -1,7 +1,9 @@
 import os,sys
 import re
+from shutil import copy
 #获取文件列表
 path_org = "original"
+path_rename = 'renamed'
 filename = ""
 Org_dir = []
 all_files = os.walk(path_org)
@@ -13,4 +15,5 @@ for root,dirs,files in all_files:
             Org_dir.append(all_file_path)
             old_name = all_file_path
             new_name = re.sub('_english','_simp_chinese',all_file_path)
-            os.renames(old_name,new_name)
+            new_name = re.sub('original',path_rename,new_name)
+            copy(old_name,new_name)
