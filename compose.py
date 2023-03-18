@@ -6,6 +6,7 @@ path_otp = "output"
 path_tmp = "process"
 path_bfr = "tobetrans"
 path_aft = "transed"
+path_rename = 'renamed'
 
 def file_search_to_list(path):
     L = []
@@ -23,7 +24,7 @@ key_f = open( path_tmp + '\\' + 'key.txt' ,'w+',encoding="utf-8-sig")
 vaule_f = open( path_tmp + '\\' + 'value.txt' ,'w+',encoding="utf-8-sig") 
 contents_f = open( path_tmp + '\\' + 'contents.txt' ,'w+',encoding="utf-8-sig") 
 # 读取原始文件
-file_name_list = file_search_to_list(path_org)
+file_name_list = file_search_to_list(path_rename)
 index = 1 
 for crr_file in file_name_list:
     org_f = open( crr_file ,'r',encoding="utf-8-sig") 

@@ -28,14 +28,14 @@ contents_f.close()
 
 formed_f = open( path_tmp + '\\' + 'form_value zh'+'.txt' ,'r',encoding="utf-8-sig") 
 for dir in file_name:
-    check = re.search('(?<=original\\\\).+(?=[\\\\])', dir)
+    check = re.search('(?<=renamed\\\\).+(?=[\\\\])', dir)
     if check:
         root = 'output\\' + check.group(0)
         if not os.path.exists(root):
             os.makedirs(root)
 i = 0 #文件引索
 j = 0 #行数
-curr_yml = open( path_otp  + '\\' +  re.search('(?<=original\\\\).+',file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
+curr_yml = open( path_otp  + '\\' +  re.search('(?<=renamed\\\\).+',file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
 print(path_otp  + '\\' +  file_name[i] )
 for line in formed_f:
     if line != '':
@@ -48,8 +48,8 @@ for line in formed_f:
         else:
             curr_yml.close()
             i+=1
-            curr_yml = open( path_otp  + '\\' +  re.search('(?<=original\\\\).+',file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
-            print(path_otp  + '\\' +  re.search('(?<=original\\\\).+',file_name[i]).group(0) )
+            curr_yml = open( path_otp  + '\\' +  re.search('(?<=renamed\\\\).+',file_name[i]).group(0) ,'w+',encoding="utf-8-sig") 
+            print(path_otp  + '\\' +  re.search('(?<=renamed\\\\).+',file_name[i]).group(0) )
             translation = re.sub('"','',line)
             translation = '"' + re.sub('\n','',translation) + '"' 
             if not re.search('⚠',translation):
