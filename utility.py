@@ -35,10 +35,4 @@ for file in raw_files:
             done_data.append(item)
     if done_data != []:
         done_file = open(re.sub('raw','raw_done',file),'w',encoding="utf-8-sig")
-        json.dump(done_data,done_file,ensure_ascii=False)
-            
-
-
-    
-                
-
+        json.dump(done_data,done_file,indent=4,ensure_ascii=False)

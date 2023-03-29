@@ -7,7 +7,12 @@ path_tmp = "process"
 path_bfr = "tobetrans"
 path_aft = "transed"
 path_rename = 'renamed'
-
+pattens = ['" *"',
+          '"\$\S+\$(#!)*"',
+          '"\(#[YGRTFE!] \[[^\]]+?\]#[YGRTFE!]/#[YGRTFE!]',
+          '"@[^!]+?!"',
+          '"\[[^\]]+?\]"',
+          '"#[YGRTFE!] \[[^\]]+?\]#!"']
 def file_search_to_list(path):
     L = []
     for root,dirs,files in os.walk(path):
@@ -39,10 +44,10 @@ for crr_file in file_name_list:
             if key_check != None and head_check == None:
                 key = re.search('^( ?)[^#][^:]+?:\d?',line).group(0)
                 vaule = re.search('".*"',line).group(0)
-                value_check_1 = re.search('^" *"',vaule)
-                value_check_2 = re.search('^"\$\S+\$(#!)*"',vaule)
-                value_check_3 = re.search('^"\(#[YGRTFE!] \[\S+?\]#[YGRTFE!]/#[YGRTFE!]',vaule) 
-                if value_check_1 == None and value_check_2 == None and value_check_3 == None:
+                value_check = 1
+                for patten in pattens:
+                    value_check = value_check and re.search(patten,vaule) == None
+                if value_check:
                     key_f.write(key+'\n')
                     vaule_f.write(vaule+'\n')
                     index += 1
