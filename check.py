@@ -27,6 +27,13 @@ for dir in raw_files:
             shutil.rmtree(root2)
             os.makedirs(root2)
 
+pattens = ['\$[^\$]+?\$',
+          '\[[^\]]+?\]',
+          '@.+?\!',
+          '#[YGRTFE]{1,2} ',
+          '#!',
+          '\\\\n']
+
 for file in raw_files:
     raw_file = open(file,'r',encoding="utf-8-sig")
     data = json.load(raw_file)
@@ -39,26 +46,14 @@ for file in raw_files:
     print('正在处理'+ file )
     for item in data:
         if item["stage"]!= -1 and item["stage"]!= 0:
-            patten1 = '\$.+?\$|\[.+?\]|@.+?\!'
-            patten2 = '#[YGRTFE]{1,2} '
-            patten2_1 = '#!'
-            patten3 = '\\\\n'
-            patten_1_check = 0
-            patten_2_check = 0
-            patten_2_1_check = 0
-            patten_3_check = 0
-            blank_check = 0
-            if len(re.findall(patten1, item["original"])) != len(re.findall( patten1,item["translation"])):
-                patten_1_check = 1
-            if len(re.findall(patten2, item["original"])) != len(re.findall( patten2,item["translation"])):
-                patten_2_check = 1
-            if len(re.findall(patten2_1, item["original"])) != len(re.findall( patten2_1,item["translation"])):
-                patten_2_1_check = 1
-            if len(re.findall(patten3, item["original"])) != len(re.findall( patten3,item["translation"])):
-                patten_3_check = 1
-            if item["translation"] =='' and item["original"]!='':
-                blank_check = 1
-            if patten_1_check or patten_2_check or patten_2_1_check or patten_3_check or blank_check:
+            org = item["original"]
+            trz = item["translation"]
+            patten_check = 0
+            for pattern in pattens:
+                if sorted(re.findall(pattern,org)) != sorted(re.findall(pattern,trz)):
+                    patten_check = 1
+                    break
+            if patten_check:
                 diff_f_data += item["key"]+" \""+item["translation"]+"\"\n"
                 diff_f_org_data += item["key"]+" \""+item["original"]+"\"\n"
     if diff_f_data != '':
