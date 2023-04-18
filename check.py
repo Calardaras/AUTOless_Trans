@@ -46,6 +46,8 @@ for file in raw_files:
     print('正在处理'+ file )
     for item in data:
         if item["stage"]!= -1 and item["stage"]!= 0:
+            if item["key"] == "COUNTRY_DESCRIPTIVE_NAME_0":
+                1
             org = item["original"]
             trz = item["translation"]
             patten_check = 0
