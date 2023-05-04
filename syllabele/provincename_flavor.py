@@ -1,7 +1,7 @@
 import json,os, shutil,re
 import numpy
 
-raw_file = open('provincenames_l_simp_chinese.yml.json','r',encoding="utf-8-sig")
+raw_file = open('syllabele\provincenames_l_simp_chinese.yml.json','r',encoding="utf-8-sig")
 data = json.load(raw_file)
 no_right = 1
 total = 99
