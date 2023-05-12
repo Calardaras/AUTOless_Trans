@@ -1,5 +1,4 @@
-import json,os, shutil,re
-import numpy
+import json,re
 
 single_consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
 double_consonants = ["ch", "rh", "th", "sh","gh","dr"

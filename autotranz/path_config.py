@@ -1,0 +1,5 @@
+path_org = "original"
+path_otp = "output"
+path_tmp = "process"
+path_bfr = "tobetrans"
+path_aft = "transed"
