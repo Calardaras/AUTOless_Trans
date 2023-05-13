@@ -28,16 +28,6 @@ def normalize(_tonorm):
             if key not in _dict:
                 _dict[key] = "<m id="+str(i)+">"
                 i +=1
-    # finds = re.findall(u_patterns,_tonorm)
-    # for find in finds:
-    #     for tag in find:
-    #         if tag == '':
-    #             continue
-    #         else:
-    #             key = tag
-    #             if key not in _dict:
-    #                 _dict[key] = "<m id="+str(i)+">"
-    #                 i +=1
     for k, v in _dict.items():
         _totranz = _totranz.replace(k, v)
     return [_totranz,_dict]
@@ -49,7 +39,7 @@ def formalize(_toform,_dict):
 
 def file_search_to_list(path,extension):
     L = []
-    for root,dirs,files in os.walk(path):
+    for root,files in os.walk(path):
         for file in files:
             all_file_path = os.path.join(root,file)
             file_name_and_format = os.path.splitext(all_file_path)
@@ -59,7 +49,7 @@ def file_search_to_list(path,extension):
 
 def get_file_structure(path,extension):
     file_structure = []
-    for root, dirs, files in os.walk(path):
+    for root,files in os.walk(path):
         for file in files:
             relpath = os.path.relpath(os.path.join(root, file), path)
             file_name_and_format = os.path.splitext(relpath)
